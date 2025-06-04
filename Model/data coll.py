@@ -4,7 +4,7 @@ import mediapipe as mp
 import numpy as np
 import csv
 
-DATA_DIR = r'C:\Project\Model\data'
+DATA_DIR = r'C:\Project\Model-Skeletion-Dectection\Model\data'
 CSV_PATH = 'exercise_pose_dataset.csv'
 
 mp_pose = mp.solutions.pose

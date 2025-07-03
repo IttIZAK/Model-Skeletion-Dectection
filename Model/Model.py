@@ -19,7 +19,7 @@ best_accuracy = 0
 attempt = 0
 
 # เทรนโมเดลจนได้ Accuracy > 0.8
-while best_accuracy < 0.7:
+while best_accuracy < 0.8:
     attempt += 1
     print(f"\nTraining attempt #{attempt}...")
 

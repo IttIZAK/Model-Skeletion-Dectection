@@ -55,17 +55,17 @@ with open(CSV_PATH, mode='w', newline='') as file:
                 lm = results.pose_landmarks.landmark
                 try:
                     # ขวา
-                    r_hip = [lm[mp_pose.PoseLandmark.RIGHT_HIP.value].x,
-                             lm[mp_pose.PoseLandmark.RIGHT_HIP.value].y]
-                    r_knee = [lm[mp_pose.PoseLandmark.RIGHT_KNEE.value].x,
+                    r_hip = [lm[mp_pose.PoseLandmark.RIGHT_HIP.value].x,    #สะโพก
+                             lm[mp_pose.PoseLandmark.RIGHT_HIP.value].y]    
+                    r_knee = [lm[mp_pose.PoseLandmark.RIGHT_KNEE.value].x,  #เข่า
                               lm[mp_pose.PoseLandmark.RIGHT_KNEE.value].y]
-                    r_ankle = [lm[mp_pose.PoseLandmark.RIGHT_ANKLE.value].x,
+                    r_ankle = [lm[mp_pose.PoseLandmark.RIGHT_ANKLE.value].x,    #ข้อเท้า
                                lm[mp_pose.PoseLandmark.RIGHT_ANKLE.value].y]
-                    r_shoulder = [lm[mp_pose.PoseLandmark.RIGHT_SHOULDER.value].x,
+                    r_shoulder = [lm[mp_pose.PoseLandmark.RIGHT_SHOULDER.value].x,  #ไหล่
                                   lm[mp_pose.PoseLandmark.RIGHT_SHOULDER.value].y]
-                    r_elbow = [lm[mp_pose.PoseLandmark.RIGHT_ELBOW.value].x,
+                    r_elbow = [lm[mp_pose.PoseLandmark.RIGHT_ELBOW.value].x,    #ศอก
                                lm[mp_pose.PoseLandmark.RIGHT_ELBOW.value].y]
-                    r_wrist = [lm[mp_pose.PoseLandmark.RIGHT_WRIST.value].x,
+                    r_wrist = [lm[mp_pose.PoseLandmark.RIGHT_WRIST.value].x,    #ข้อมือ
                                lm[mp_pose.PoseLandmark.RIGHT_WRIST.value].y]
 
                     # ซ้าย
